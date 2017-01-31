@@ -46,27 +46,16 @@ nav
         text-transform: uppercase
 
     .drop-menu
+        display: none
         position: absolute
         z-index: -1
 
         li
-            display: none
             margin-top: 32px
 
         a
             color: shade($white, 50%)
 
-    li:hover > .drop-menu li
-        display: list-item
-        opacity: 0
-
-        @for $i from 1 through 2
-            &:nth-child(#{$i})
-                animation:
-                    name: fadeIn
-                    duration: 350ms * $i
-                    timing-function: ease-in-out
-                    fill-mode: forwards
 
 .hero-container
     width: 100%

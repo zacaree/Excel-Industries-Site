@@ -608,26 +608,13 @@ nav {
     display: inline-block;
     text-transform: uppercase; }
   nav .drop-menu {
+    display: none;
     position: absolute;
     z-index: -1; }
     nav .drop-menu li {
-      display: none;
       margin-top: 32px; }
     nav .drop-menu a {
       color: gray; }
-  nav li:hover > .drop-menu li {
-    display: list-item;
-    opacity: 0; }
-    nav li:hover > .drop-menu li:nth-child(1) {
-      animation-name: fadeIn;
-      animation-duration: 350ms;
-      animation-timing-function: ease-in-out;
-      animation-fill-mode: forwards; }
-    nav li:hover > .drop-menu li:nth-child(2) {
-      animation-name: fadeIn;
-      animation-duration: 700ms;
-      animation-timing-function: ease-in-out;
-      animation-fill-mode: forwards; }
 
 .hero-container {
   width: 100%;
