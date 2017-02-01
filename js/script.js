@@ -10,9 +10,8 @@ $(document).ready(function(){
     });
 
 
-    $('.menu-icon').on('click', function(){
-        $('.overlay').fadeToggle(300);
-        $('.menu').fadeToggle(300);
+    $('.menu-icon').click(function(){
+        $('.overlay, .menu').fadeToggle(300);
     });
 
 
@@ -20,6 +19,11 @@ $(document).ready(function(){
         $('.drop-menu').fadeToggle(300);
     });
 
+    $('#about-btn').click(function(){
+        if($(window).width() < 736){
+            $('.menu').fadeOut(300);
+        }
+        $('.about-container').fadeToggle(300);
+    });
 
-    
 });

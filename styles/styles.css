@@ -644,6 +644,26 @@ nav {
   bottom: 0;
   z-index: 2; }
 
+.about-container {
+  display: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  z-index: 3; }
+  .about-container #american-innovation {
+    margin: 0 auto;
+    padding: 0 30px 20px 30px;
+    max-width: 480px; }
+  .about-container p {
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 30px; }
+
 @media (max-width: 736px) {
   nav .logo {
     float: left;
