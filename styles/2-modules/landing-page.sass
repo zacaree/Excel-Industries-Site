@@ -7,10 +7,6 @@ body
     height: 100vh
     position: relative
 
-.wrap
-    position: relative
-    height: 100vh
-
 a, i
     cursor: pointer
 
@@ -18,7 +14,7 @@ nav
     margin: 0 auto
     max-width: 1260px
     position: relative
-    z-index: 2
+    z-index: 3
 
     .logo
         float: left
@@ -31,9 +27,10 @@ nav
 
     .menu
         float: right
-        margin: 38px 30px 0 0
+        margin: 22px 30px 0 0
 
         a
+            display: inline-block
             padding: 16px
             transition: 0.3s
 
@@ -46,27 +43,13 @@ nav
         text-transform: uppercase
 
     .drop-menu
+        display: none
         position: absolute
-        z-index: -1
-
-        li
-            display: none
-            margin-top: 32px
+        z-index: 1
 
         a
             color: shade($white, 50%)
 
-    li:hover > .drop-menu li
-        display: list-item
-        opacity: 0
-
-        @for $i from 1 through 2
-            &:nth-child(#{$i})
-                animation:
-                    name: fadeIn
-                    duration: 350ms * $i
-                    timing-function: ease-in-out
-                    fill-mode: forwards
 
 .hero-container
     width: 100%
@@ -76,6 +59,7 @@ nav
     top: 48%
     transform: translateY(-50%)
     //
+    z-index: 1
 
     #hero
         margin: 0 30px
@@ -98,32 +82,59 @@ nav
             color: $darks
 
 
+.overlay
+    background-color: transparentize($darks, 0.05)
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 2
+
+    // &.is-active
+    //     background-color: transparentize($darks, 0.05)
+
+
+
+
+        // animation:
+        //     name: overlayAnim
+        //     duration: 0.3s
+        //     timing-function: ease-in-out
+        //     fill-mode: forwards
+
+
+
+
+
+
 
 
 
 // About Page
 
-.about-container
-    width: 100%
-    text-align: center
-    // Center Vertically – this requires the parent element to be set to position relative.
-    position: absolute
-    top: 48%
-    transform: translateY(-50%)
-    //
-
-    #american-innovation
-        margin: 0 auto
-        padding: 0 30px 20px 30px
-        max-width: 480px
-
-    p
-        color: white
-        font-weight: 400
-        font-size: 1.2rem
-        max-width: 560px
-        margin: 0 auto
-        padding: 0 30px
+// .about-container
+//     width: 100%
+//     text-align: center
+//     // Center Vertically – this requires the parent element to be set to position relative.
+//     position: absolute
+//     top: 48%
+//     transform: translateY(-50%)
+//     //
+//
+//     #american-innovation
+//         margin: 0 auto
+//         padding: 0 30px 20px 30px
+//         max-width: 480px
+//
+//     p
+//         color: white
+//         font-weight: 400
+//         font-size: 1.2rem
+//         max-width: 560px
+//         margin: 0 auto
+//         padding: 0 30px
 
 
 
@@ -135,19 +146,20 @@ nav
 ///////////////
 
 // Animation fadeIn is linked to other elements.
-@-webkit-keyframes fadeIn
-    from
-        opacity: 0
+// @-webkit-keyframes fadeIn
+//     from
+//         opacity: 0
+//
+//     to
+//         opacity: 1
+//
+// @-webkit-keyframes fadeOut
+//     from
+//         opacity: 1
+//
+//     to
+//         opacity: 0
 
-    to
-        opacity: 1
-
-@-webkit-keyframes fadeOut
-    from
-        opacity: 1
-
-    to
-        opacity: 0
 
 
 
@@ -174,22 +186,20 @@ nav
 
         .menu
             display: none
-            margin-top: 80px
+            margin-top: 76px
             position: fixed
             text-align: center
             width: 100%
 
+            a
+                width: 100%
+
         .menu > li
             display: block
-            margin-top: 30px
 
-    .dimmer
-        background-color: transparentize($darks, 0.05)
-        display: none
-        width: 100%
-        height: 100%
-        position: fixed
-        z-index: 1
+        .drop-menu
+            position: relative
+            z-index: 3
 
     .hero-container
 
