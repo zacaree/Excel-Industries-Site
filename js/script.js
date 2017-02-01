@@ -22,6 +22,10 @@ $(document).ready(function(){
     $('#about-btn').click(function(){
         if($(window).width() < 736){
             $('.menu').fadeOut(300);
+            $('.overlay').fadeIn(300);
+        }else{
+            $('.menu').fadeIn(300);
+            $('.overlay').fadeIn(300);
         }
         $('.about-container').fadeToggle(300);
     });
