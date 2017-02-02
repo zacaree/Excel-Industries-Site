@@ -602,11 +602,11 @@ nav {
     color: white;
     display: inline-block;
     text-transform: uppercase; }
-  nav .drop-menu {
+  nav .dropMenu {
     display: none;
     position: absolute;
     z-index: 1; }
-    nav .drop-menu a {
+    nav .dropMenu a {
       color: gray; }
 
 .hero-container {
@@ -685,7 +685,7 @@ nav {
       width: 100%; }
   nav .menu > li {
     display: block; }
-  nav .drop-menu {
+  nav .dropMenu {
     position: relative;
     z-index: 3; }
 
