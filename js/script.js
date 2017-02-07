@@ -46,7 +46,7 @@ $(document).ready(function(){
         $('.overlay').fadeOut(300);
         $('.about-container').fadeOut(300);
         $('.hero-container').fadeIn(300);
-        if($(window).width() < 736){
+        if($(window).width() < 737){
             if($('.menu').is(':visible')){
                 $('.menu').fadeOut(300);
             }
@@ -58,7 +58,7 @@ $(document).ready(function(){
             $('.product-btn').siblings().animate({top: '0px'}, 300);
             $('.dropMenu').fadeOut(300);
         }
-        if($(window).width() < 736){
+        if($(window).width() < 737){
             $('.menu').fadeOut(300);
             $('.hero-container').fadeOut(300);
             $('.overlay').fadeIn(300);
@@ -71,7 +71,7 @@ $(document).ready(function(){
     });
 
     $('.product-btn').click(function(){
-        if($(window).width() < 736){
+        if($(window).width() < 737){
             if($('.dropMenu').is(':hidden')){
                 $('.dropMenu').delay(200).fadeIn(300);
                 $(this).siblings().animate({top: '112px'}, 300);
