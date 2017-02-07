@@ -19,6 +19,7 @@ nav
     .logo
         float: left
         margin: 30px
+        cursor: pointer
         width: 250px
 
     .menu-icon
@@ -40,11 +41,13 @@ nav
     .menu > li
         color: white
         display: inline-block
+        position: relative
         text-transform: uppercase
 
     .dropMenu
         display: none
         position: absolute
+        width: 300px
         z-index: 1
 
         a
@@ -189,7 +192,11 @@ nav
             display: block
 
         .dropMenu
-            position: relative
+            position: absolute
+            left: 50%
+            top: 112px
+            transform: translate(-50%, -50%)
+            width: 100%
             z-index: 3
 
     .hero-container

@@ -585,6 +585,7 @@ nav {
   nav .logo {
     float: left;
     margin: 30px;
+    cursor: pointer;
     width: 250px; }
   nav .menu-icon {
     color: white;
@@ -601,10 +602,12 @@ nav {
   nav .menu > li {
     color: white;
     display: inline-block;
+    position: relative;
     text-transform: uppercase; }
   nav .dropMenu {
     display: none;
     position: absolute;
+    width: 300px;
     z-index: 1; }
     nav .dropMenu a {
       color: gray; }
@@ -686,7 +689,11 @@ nav {
   nav .menu > li {
     display: block; }
   nav .dropMenu {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 112px;
+    transform: translate(-50%, -50%);
+    width: 100%;
     z-index: 3; }
 
   .hero-container .button {
