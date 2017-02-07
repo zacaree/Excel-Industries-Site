@@ -17,36 +17,45 @@
 
    <nav>
       <div class="logo">
-         <a href="index.html"><img src="img/logo.svg" alt="" /></a>
+         <img src="img/logo.svg" alt="" />
       </div>
 
-      <i class="material-icons menu-icon open">menu</i>
+      <i class="material-icons menu-icon toggle">menu</i>
 
       <ul class="menu">
-         <li><a id="product-btn" href="#">Our Products</a>
-            <ul class="drop-menu">
-               <li><a href="https://www.hustlerturf.com/">Hustler Turf Equipment</a></li>
-               <li><a href="http://www.bigdogmowerco.com/">BigDog Mower Co.</a></li>
+         <li class="toggle product-btn"><a href="#">Our Products</a>
+            <ul class="dropMenu">
+               <li class="content"><a href="https://www.hustlerturf.com/">Hustler Turf Equipment</a></li>
+               <li class="content"><a href="http://www.bigdogmowerco.com/">BigDog Mower Co.</a></li>
             </ul>
          </li>
-         <li><a href="#">About Us</a></li>
-         <li><a href="https://www.hustlerturf.com/info/employment">Careers</a></li>
+         <li class="about-btn"><a class="about-btn" href="#">About Us</a></li>
+         <li class="careers-btn"><a href="https://www.hustlerturf.com/info/employment">Careers</a></li>
       </ul>
    </nav>
+
+   <section class="about-container">
+      <div id="american-innovation">
+         <img src="img/american-innovation.svg" alt="American Innovation" />
+      </div>
+      <p>
+         In 1964, Excel Industries introduced the Hustler as the worlds first zero-turn mower. That spirit of innovation continues today as Excel sets the standard in crafting and creating the most innovative outdoor power equipment on the market. Developing new products and improving existing ones is a source of pride for the Midwest craftsmen and women at Excel industries. And it’s that pride, plus hard work and ingenuity that all comes together to create the strongest, highest performing, and best quality zero-turn mowers and utility vehicles in the industry.
+      </p>
+   </section>
 
    <div class="overlay"></div>
 
 
    <section class="hero-container">
       <img id="hero" src="img/hero.svg" alt="Proud manufacturer of Hustler Turf Equipment &amp; BigDog Mower Co." />
-      <a class="button" href="#">Read More</a>
+      <a class="button about-btn" href="#">Read More</a>
    </section>
 
 
 
 
 
-<script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>
+<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
