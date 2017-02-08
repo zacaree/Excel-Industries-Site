@@ -673,7 +673,9 @@ nav {
 @media (max-width: 736px) {
   nav .logo {
     float: left;
-    margin: 18px 0 0 18px; }
+    margin: 18px 0 0 18px;
+    width: 200px;
+    height: 40px; }
     nav .logo img {
       width: 200px;
       height: 40px; }
