@@ -705,7 +705,23 @@ nav {
     top: 112px;
     transform: translate(-50%, -50%);
     width: 100%;
-    z-index: 3; } }
+    z-index: 3; }
+
+  .hero-container #hero {
+    max-width: 500px; }
+  .hero-container .button {
+    margin-top: 20px;
+    padding: 10px 12px;
+    width: 110px; }
+
+  .about-container #american-innovation {
+    padding-bottom: 10px; }
+  .about-container p {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 30px; }
+    .about-container p:nth-child(3) {
+      display: none; } }
 @media (max-width: 667px) {
   .hero-container {
     top: 56%; }
