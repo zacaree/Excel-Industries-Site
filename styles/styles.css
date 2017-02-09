@@ -589,7 +589,11 @@ nav {
     float: left;
     margin: 30px;
     cursor: pointer;
-    width: 250px; }
+    width: 250px;
+    height: 50px; }
+    nav .logo img {
+      width: 100%;
+      height: auto; }
   nav .menu-icon {
     color: white;
     display: none; }
@@ -677,8 +681,8 @@ nav {
     width: 200px;
     height: 40px; }
     nav .logo img {
-      width: 200px;
-      height: 40px; }
+      width: 100%;
+      height: auto; }
   nav .menu-icon {
     display: block;
     float: right;
