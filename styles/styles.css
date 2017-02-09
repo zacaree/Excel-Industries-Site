@@ -629,6 +629,9 @@ nav {
   .hero-container #hero {
     margin: 0 30px;
     max-width: 600px; }
+    .hero-container #hero img {
+      width: 100%;
+      height: auto; }
   .hero-container .button {
     border: 2px solid white;
     box-sizing: content-box;
@@ -666,6 +669,9 @@ nav {
     margin: 0 auto;
     padding: 0 30px 20px 30px;
     max-width: 480px; }
+    .about-container #american-innovation img {
+      width: 100%;
+      height: auto; }
   .about-container p {
     color: white;
     font-weight: 400;
